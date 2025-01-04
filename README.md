@@ -1,8 +1,16 @@
-# React + Vite
+# TransLingo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TransLingo is a web application that allows users to upload audio files or record audio in real-time and transcribe it into any selected language using a machine learning model. This project aims to provide an easy-to-use interface for audio transcription and translation, making it accessible to users worldwide.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Audio Upload**: Users can upload audio files in various formats for transcription.
+- **Real-Time Recording**: Users can record audio directly from the browser for instant transcription.
+- **Language Translation**: Transcribe audio into any selected language using advanced machine learning models.
+- **Responsive Design**: The application is designed to work seamlessly on both desktop and mobile devices.
+
+## Technologies Used
+
+- **Frontend**: React, Tailwind CSS, DaisyUI
+- **Machine Learning**: Python, TensorFlow, or PyTorch (for the ML model)
+
