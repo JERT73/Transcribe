@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Header from './components/header'
 import Home from './components/Home'
 import FileDisplay from './components/FileDisplay'
+import { toast } from 'react-toastify'
 
 function App() {
   const [audioFile, setAudioFile] = useState(null)
@@ -13,6 +14,10 @@ function App() {
     setAudioFile(null)
     setAudioRec(null)
   }
+
+  useEffect(() => {
+    toast.info(audioRec)
+  }, [audioRec])
 
   return (
     <div className='

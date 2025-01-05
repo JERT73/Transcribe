@@ -1,7 +1,7 @@
 import React from 'react'
 
 const FileDisplay = (props) => {
-    const { handleAudioReset, audioFile, audioReset } = props
+    const { handleAudioReset, audioFile, audioRec } = props
 
   return (
     <main className='
@@ -27,7 +27,7 @@ const FileDisplay = (props) => {
         <div className='
             flex flex-row font-mono text-[20px] min-w-[200px]
             text-white
-        '>
+        '>  
             <p className='
                 font-bold
             '>
@@ -36,7 +36,10 @@ const FileDisplay = (props) => {
             <p className='
                 italic text-blue-950 font-semibold
             '>
-                {audioFile.name}
+                {
+                    audioFile ?
+                    audioFile.name : "Recorded Audio"
+                }
             </p>
         </div>
 

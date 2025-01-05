@@ -26,7 +26,7 @@ const Header = () => {
           '>
             New
           </p>
-          <i class="fa-solid fa-plus text-blue-950"></i>
+          <i className="fa-solid fa-plus text-blue-950"></i>
         </button>
     </header>
   )
