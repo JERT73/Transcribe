@@ -6,18 +6,19 @@ const Header = () => {
       flex items-center justify-between gap-4 
      bg-blue-400 px-4 shadow-slate-950 shadow-custom-1
       p-3 rounded-3xl font-bold
-    '>  
-        <h1 className='
-          text-[20px] text-white font-mono
-        '>
-          Trans
-          <span className='
-            text-blue-950
+    '>  <a href='/'>
+          <h1 className='
+            text-[20px] text-white font-mono
           '>
-            Lingo
-          </span>
-        </h1>
-        <button className='
+            Trans
+            <span className='
+              text-blue-950
+            '>
+              Lingo
+            </span>
+          </h1>
+        </a>
+        <a href='/' className='
           flex flex-row gap-2 
           items-center cursor-pointer
         '>
@@ -27,7 +28,7 @@ const Header = () => {
             New
           </p>
           <i className="fa-solid fa-plus text-blue-950"></i>
-        </button>
+        </a>
     </header>
   )
 }
